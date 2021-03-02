@@ -8,4 +8,4 @@ Need: The file including the ancesrtor sequences of each gene. (named: ancestor_
 Usage: perl get_conANDdiv_2spe.pl
 
 
-OutPut:
+OutPut: The files of convergence_sites and divergence_sites are the results.
