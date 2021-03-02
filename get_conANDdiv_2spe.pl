@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 use File::Basename;
 use File::Copy;
-$CON1="bamboo_rat"; #趋同物种1
-$CON2="node22";
-$ANC1="node16";  #祖先物种1
-$ANC2="node21";
-$REF="Homo";
-$CONTROL1="nide19";
-$CONTROL2="node23";
+$CON1="bamboo_rat"; #target spec 1
+$CON2="node22";   #target spec 2
+$ANC1="node16";  # ancestor of target spec 1
+$ANC2="node21";  # ancestor of target spec 2
+$REF="Homo";   # ref  spec 
+$CONTROL1="node19";    # control of  target spec 1
+$CONTROL2="node23";   # control of target spec 2
 @spe=qw/bamboo_rat zokor Heterocephalus_glaber_female Mus Cricetulus_griseus_chok1gshd Jaculus_jaculus Nannospalax_galili Fukomys_damarensis Octodon_degus Cavia Ictidomys Homo  node13 node14 node15 node16 node17 node18 node19 node20 node21 node22 node23/; 
 
 #((((((3_bamboo_rat, 5_zokor) 18 , 4_Nannospalax_galili) 17 , (1_Mus, 2_Cricetulus_griseus_chok1gshd) 19 ) 16 , 6_Jaculus_jaculus) 15 , (((10_Heterocephalus_glaber_female, 11_Fukomys_damarensis) 22 , (9_Octodon_degus, 8_Cavia) 23 ) 21 , 7_Ictidomys) 20 ) 14 , 12_Homo) 13 ;
